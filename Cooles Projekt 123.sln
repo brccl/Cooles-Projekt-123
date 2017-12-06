@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooles Projekt 123", "Cooles Projekt 123.csproj", "{B4CB41DB-FDC7-2F93-DC2F-5980BEE1C354}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooles Projekt 123.Plugins", "Cooles Projekt 123.Plugins.csproj", "{CEBE8C33-EF13-6BDF-7BB0-255AE0EF09B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cooles Projekt 123.Editor.Plugins", "Cooles Projekt 123.Editor.Plugins.csproj", "{9633B21F-0095-241E-C7AD-704A660FD547}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4CB41DB-FDC7-2F93-DC2F-5980BEE1C354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4CB41DB-FDC7-2F93-DC2F-5980BEE1C354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4CB41DB-FDC7-2F93-DC2F-5980BEE1C354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4CB41DB-FDC7-2F93-DC2F-5980BEE1C354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEBE8C33-EF13-6BDF-7BB0-255AE0EF09B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBE8C33-EF13-6BDF-7BB0-255AE0EF09B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBE8C33-EF13-6BDF-7BB0-255AE0EF09B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBE8C33-EF13-6BDF-7BB0-255AE0EF09B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9633B21F-0095-241E-C7AD-704A660FD547}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9633B21F-0095-241E-C7AD-704A660FD547}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9633B21F-0095-241E-C7AD-704A660FD547}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9633B21F-0095-241E-C7AD-704A660FD547}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
