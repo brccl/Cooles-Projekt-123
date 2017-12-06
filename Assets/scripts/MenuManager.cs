@@ -31,6 +31,33 @@ public class MenuManager : MonoBehaviour {
 
     }
 
+    public void ToCredits()
+    {
+
+        SceneManager.LoadScene("Credits");
+
+
+
+    }
+
+    public void ToPlayMenu()
+    {
+
+        SceneManager.LoadScene("Start game Menu");
+
+
+
+    }
+
+    public void ToHub()
+    {
+
+        SceneManager.LoadScene("Hub");
+
+
+
+    }
+
     public void Quiterino()
     {
         Application.Quit();
