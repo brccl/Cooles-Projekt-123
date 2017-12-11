@@ -52,7 +52,7 @@ public class MenuManager : MonoBehaviour {
     public void ToHub()
     {
 
-        SceneManager.LoadScene("Hub");
+        SceneManager.LoadScene(sceneName: "Hub");
 
 
 
