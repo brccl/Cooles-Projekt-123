@@ -7,21 +7,47 @@ using UnityEngine.SceneManagement;
 public class Level1End : MonoBehaviour {
 
     [SerializeField] private string NewLevel;
-    [SerializeField] public bool Done = false;
+    [SerializeField] static public float EnterValue;
+    [SerializeField] public Transform W1;
 
- 
+
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
+            EnterValue++;
             SceneManager.LoadScene("Hub");
-            Done = true;
+            
+            
 
             
             
 
         }
+    }
+
+    public void Update()
+    {
+        if (EnterValue >= 1)
+        {
+            W1.gameObject.SetActive(false);
+
+
+
+        }
+        else if (EnterValue != 1)
+        {
+
+            W1.gameObject.SetActive(true);
+
+        }
+
+
+
+
+
     }
 
 }

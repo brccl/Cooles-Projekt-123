@@ -7,9 +7,10 @@ public class PauseGame : MonoBehaviour {
 
     [SerializeField] public Transform canvas;
 
-    // Update is called once per frame
-    void Update()
+
+    public void Pause()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (canvas.gameObject.activeInHierarchy == false)
@@ -29,6 +30,20 @@ public class PauseGame : MonoBehaviour {
 
 
         }
+
+
+    }
+
+    private void Start()
+    {
+        canvas.gameObject.SetActive(false);
+    }
+
+
+    // Update is called once per frame
+    private void Update()
+    {
+        Pause();
 
     }
 }

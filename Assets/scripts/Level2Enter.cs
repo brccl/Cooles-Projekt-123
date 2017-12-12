@@ -4,19 +4,42 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
+
+
 public class Level2Enter : MonoBehaviour
 {
 
-  
 
-    private void OnTriggerEnter2D(Collider2D other)
+    [SerializeField] public GameObject PressE;
+
+    private void Start()
+    {
+        PressE.SetActive(false);
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        PressE.SetActive(false);
+    }
+
+
+    private void OnTriggerStay2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            PressE.SetActive(true);
 
-            SceneManager.LoadScene("Lv2");
+            if (Input.GetKeyDown(KeyCode.E))
+            {
 
 
+
+
+                SceneManager.LoadScene("Lv2");
+
+            }
         }
     }
 }
+
+

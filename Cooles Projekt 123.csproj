@@ -230,7 +230,12 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\Level1End.cs" />
     <Compile Include="Assets\scripts\Level1Enter.cs" />
+    <Compile Include="Assets\scripts\Level2End.cs" />
     <Compile Include="Assets\scripts\Level2Enter.cs" />
+    <Compile Include="Assets\scripts\Level3End.cs" />
+    <Compile Include="Assets\scripts\Level3Enter.cs" />
+    <Compile Include="Assets\scripts\Level4End.cs" />
+    <Compile Include="Assets\scripts\Level4Enter.cs" />
     <Compile Include="Assets\scripts\MenuManager.cs" />
     <Compile Include="Assets\scripts\PauseGame.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01.cs" />
