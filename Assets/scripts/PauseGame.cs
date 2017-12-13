@@ -37,6 +37,7 @@ public class PauseGame : MonoBehaviour {
     private void Start()
     {
         canvas.gameObject.SetActive(false);
+        Time.timeScale = 1;
     }
 
 
