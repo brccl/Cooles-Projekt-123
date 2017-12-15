@@ -4,17 +4,23 @@ using UnityEngine;
 
 public class Coins : MonoBehaviour {
 
-    [SerializeField] public int Wert = 1;
-    [SerializeField] public int CoinZ = 0;
-
+    [SerializeField] public int Wert =1;
+    [SerializeField] public static int CoinZ = 0;
+    [SerializeField] public Transform canvasvoll;
+    [SerializeField] public Transform canvasleer;
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.CompareTag("Player"))
         {
             Destroy(gameObject);
+            canvasvoll.gameObject.SetActive(true);
+            canvasleer.gameObject.SetActive(false);
+            CoinZ++;
+            
+
+            //CoinManager.AddCoins(Wert);
 
 
-            CoinManager.AddCoins(Wert);
         }
 
     }
@@ -22,10 +28,26 @@ public class Coins : MonoBehaviour {
 
     private void Start()
         {
-
-
+        if (CoinZ < 1)
+        {
+            canvasvoll.gameObject.SetActive(false);
 
         }
+        if (CoinZ >= 1)
+        {
+
+            canvasvoll.gameObject.SetActive(true);
+
+        }
+    }
+
+    private void Update()
+    {
+       
+
+
+
+    }
 }
 
  

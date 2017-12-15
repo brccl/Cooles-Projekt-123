@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class CoinManager : MonoBehaviour {
 
-    private static int coins;
+    public static int coins;
     Text text;
+   
 
-	// Use this for initialization
-	void Start () {
+
+
+    // Use this for initialization
+    void Start() {
         text = GetComponent<Text>();
+       
 
         
 	}
@@ -21,13 +25,25 @@ public class CoinManager : MonoBehaviour {
         {
             coins = 0;
         }
+       
+
+        
 
         text.text = "" + coins;
+
+       
+      
 	}
 
     public static void AddCoins(int cnt)
     {
         coins += cnt;
+       
+
+       
+
+
+
     }
 
 }

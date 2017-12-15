@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class Level1Enter : MonoBehaviour
 {
-
+    
 
     [SerializeField] public GameObject PressE;
 
@@ -35,6 +35,7 @@ public class Level1Enter : MonoBehaviour
 
 
                 SceneManager.LoadScene("Lv1");
+                //LevelLoader.LoadLevel(1);
 
             }
         }
