@@ -23,6 +23,7 @@ namespace UnityStandardAssets._2D
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
         public int currentHealth;
         public int maxHealth = 4;
+<<<<<<< HEAD
         public float invincibilityTime;
         public bool invincibility;
         public Vector3 respawnPoint;
@@ -30,6 +31,9 @@ namespace UnityStandardAssets._2D
         int numSword = 0;
         int numPotion = 0;
 
+=======
+        private bool invincible = false;
+>>>>>>> f780267bf341f0524cee950d638bfccb39dc0404
 
         int jumpCount = 0;
 
@@ -46,13 +50,19 @@ namespace UnityStandardAssets._2D
 
         void Start()
         {
+<<<<<<< HEAD
             //Set current Health to max on Start
+=======
+>>>>>>> f780267bf341f0524cee950d638bfccb39dc0404
             currentHealth = maxHealth;
         }
 
         void Update()
         {
+<<<<<<< HEAD
            
+=======
+>>>>>>> f780267bf341f0524cee950d638bfccb39dc0404
             if (currentHealth > maxHealth)
             {
                 currentHealth = maxHealth;
@@ -63,6 +73,7 @@ namespace UnityStandardAssets._2D
                 Die();
             }
 
+<<<<<<< HEAD
           if(invincibilityTime <= 0)
             {
                 invincibility = false;
@@ -71,6 +82,9 @@ namespace UnityStandardAssets._2D
                 invincibility = true;
                 invincibilityTime -= Time.deltaTime;
             }
+=======
+          
+>>>>>>> f780267bf341f0524cee950d638bfccb39dc0404
             
 
         }
@@ -165,6 +179,7 @@ namespace UnityStandardAssets._2D
 
         void Die()
         {
+<<<<<<< HEAD
             //load last Checkpoint
             if (respawnPoint != null)
             {
@@ -188,6 +203,15 @@ namespace UnityStandardAssets._2D
             currentHealth -= dmg;
             //invincibilityTime in Seconds
             invincibilityTime += 0.5f;
+=======
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reload Last Loaded Scene
+        }
+
+
+        public void Damage (int dmg)
+        {
+            currentHealth -= dmg;
+>>>>>>> f780267bf341f0524cee950d638bfccb39dc0404
           //  gameObject.GetComponent<Animation>().Play("Player_RedFlash");
         }
 
@@ -204,6 +228,7 @@ namespace UnityStandardAssets._2D
             yield return 0;
         }
 
+<<<<<<< HEAD
         void OnTriggerEnter2D(Collider2D col)
         {
             //Kill Player if he falls into a Deathzone
@@ -240,5 +265,25 @@ namespace UnityStandardAssets._2D
 
         }
 
+=======
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (!invincible)
+            {
+                if (collision.gameObject.tag == "Spikes")
+                {
+                    invincible = true;
+                    Invoke("resetInvulnerability", 2);
+                }
+            }
+        }
+
+        void resetInvulnerability()
+        {
+            invincible = false;
+        }
+
+
+>>>>>>> f780267bf341f0524cee950d638bfccb39dc0404
     }
 }

@@ -15,6 +15,7 @@ public class Spikes : MonoBehaviour {
     }
 	
 	// Update is called once per frame
+<<<<<<< HEAD
 	void OnTriggerEnter2D(Collider2D col) { 
 
         if (col.CompareTag("Player"))
@@ -28,4 +29,18 @@ public class Spikes : MonoBehaviour {
 
 
     }
+=======
+	void OnTriggerEnter 2D (Collider2D col) {
+
+
+        if (col.CompareTag("Player"))
+        {
+            platformerCharacter2D.Damage(1);
+
+            StartCoroutine (platformerCharacter2D.Knockback (0.02f, 50, platformerCharacter2D.transform.position));
+        }
+
+        
+	}
+>>>>>>> f780267bf341f0524cee950d638bfccb39dc0404
 }
