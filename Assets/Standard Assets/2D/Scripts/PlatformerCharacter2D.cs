@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 
 namespace UnityStandardAssets._2D
@@ -20,7 +22,12 @@ namespace UnityStandardAssets._2D
         private Animator m_Anim;            // Reference to the player's animator component.
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  // For determining which way the player is currently facing.
-       
+        public int currentHealth;
+        public int maxHealth = 4;
+        public float invincibilityTime;
+        public bool invincibility;
+        public Vector3 respawnPoint;
+        private bool invincible = false;
 
         int jumpCount = 0;
 
@@ -35,8 +42,32 @@ namespace UnityStandardAssets._2D
             
         }
 
+        void Start()
+        {
+            //Set current Health to max on Start
+            currentHealth = maxHealth;
+        }
+
         void Update()
         {
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+
+            if (currentHealth <= 0)
+            {
+                Die();
+            }
+            if (invincibilityTime <= 0)
+            {
+                invincibility = false;
+            }
+            else
+            {
+                invincibility = true;
+                invincibilityTime -= Time.deltaTime;
+            }
 
         }
         private void FixedUpdate()
@@ -126,6 +157,79 @@ namespace UnityStandardAssets._2D
             Vector3 theScale = transform.localScale;
             theScale.x *= -1;
             transform.localScale = theScale;
+        }
+
+        void Die()
+        {
+            //load last Checkpoint
+            if (respawnPoint != null)
+            {
+                transform.position = respawnPoint;
+                {
+                    currentHealth = maxHealth;
+                }
+            }
+            //Load last Scene if no Checkpoint
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); // Reload Last Loaded Scene
+            }
+        }
+
+
+
+        public void Damage(int dmg)
+        {
+            //Deal Damage to Player Health
+            currentHealth -= dmg;
+            //invincibilityTime in Seconds
+            invincibilityTime += 0.5f;
+        }
+
+        public IEnumerator Knockback(float knockDur, float knockbackPwr, Vector3 knockbackDir)
+        {
+            float timer = 0;
+
+            while (knockDur > timer)
+            {
+                timer += Time.deltaTime;
+
+                m_Rigidbody2D.AddForce(new Vector3(knockbackDir.x * -500, knockbackDir.y + knockbackPwr, transform.position.z));
+            }
+            yield return 0;
+        }
+
+        void OnTriggerEnter2D(Collider2D col)
+        {
+            //Kill Player if he falls into a Deathzone
+            if (col.CompareTag("FallDetection"))
+            {
+                Die();
+            }
+            //Save Position of last Checkpoint
+            if (col.CompareTag("Checkpoint"))
+            {
+                respawnPoint = transform.position;
+
+
+            }
+        }
+
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (!invincible)
+            {
+                if (collision.gameObject.tag == "Spikes")
+                {
+                    invincible = true;
+                    Invoke("resetInvulnerability", 2);
+                }
+            }
+        }
+
+        void resetInvulnerability()
+        {
+            invincible = false;
         }
     }
 }
