@@ -194,7 +194,7 @@ namespace UnityStandardAssets._2D
             {
                 timer += Time.deltaTime;
 
-                m_Rigidbody2D.AddForce(new Vector3(knockbackDir.x * -500, knockbackDir.y + knockbackPwr, transform.position.z));
+                m_Rigidbody2D.AddForce(new Vector3(knockbackDir.x * -100, knockbackDir.y + knockbackPwr, transform.position.z));
             }
             yield return 0;
         }

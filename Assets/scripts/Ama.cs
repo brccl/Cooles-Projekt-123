@@ -33,12 +33,14 @@ public class Ama : MonoBehaviour
         if (AAma < 1)
         {
             canvasvoll1.gameObject.SetActive(false);
+            canvasleer2.gameObject.SetActive(true);
 
         }
         if (AAma >= 1)
         {
 
             canvasvoll1.gameObject.SetActive(true);
+            canvasleer2.gameObject.SetActive(false);
 
         }
     }

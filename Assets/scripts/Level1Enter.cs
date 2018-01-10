@@ -34,7 +34,7 @@ public class Level1Enter : MonoBehaviour
 
 
 
-                SceneManager.LoadScene("Lv1");
+                SceneManager.LoadScene("Lv6");
                 //LevelLoader.LoadLevel(1);
 
             }

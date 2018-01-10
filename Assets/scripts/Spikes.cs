@@ -6,6 +6,7 @@ using UnityStandardAssets._2D;
 public class Spikes : MonoBehaviour {
 
 
+
     private PlatformerCharacter2D platformerCharacter2D;
 
     // Use this for initialization

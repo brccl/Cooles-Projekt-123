@@ -31,12 +31,14 @@ public class Coins : MonoBehaviour {
         if (CoinZ < 1)
         {
             canvasvoll.gameObject.SetActive(false);
+            canvasleer.gameObject.SetActive(true);
 
         }
         if (CoinZ >= 1)
         {
 
             canvasvoll.gameObject.SetActive(true);
+            canvasleer.gameObject.SetActive(false);
 
         }
     }

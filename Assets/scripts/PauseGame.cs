@@ -6,6 +6,7 @@ public class PauseGame : MonoBehaviour {
 
 
     [SerializeField] public Transform canvas;
+    [SerializeField] public Transform canvas1;
 
 
     public void Pause()
@@ -16,12 +17,14 @@ public class PauseGame : MonoBehaviour {
             if (canvas.gameObject.activeInHierarchy == false)
             {
                 canvas.gameObject.SetActive(true);
+                canvas1.gameObject.SetActive(false);
                 Time.timeScale = 0;
 
             }
             else
             {
                 canvas.gameObject.SetActive(false);
+                canvas1.gameObject.SetActive(true);
                 Time.timeScale = 1;
 
 

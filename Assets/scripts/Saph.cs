@@ -33,12 +33,14 @@ public class Saph : MonoBehaviour
         if (Sap < 1)
         {
             canvasvoll.gameObject.SetActive(false);
+            canvasleer.gameObject.SetActive(true);
 
         }
         if (Sap >= 1)
         {
 
             canvasvoll.gameObject.SetActive(true);
+            canvasleer.gameObject.SetActive(false);
 
         }
     }

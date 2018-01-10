@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +11,7 @@ public class PlayerHealthUI : MonoBehaviour
 
     public Sprite[] HeartSprites;
     public Image HeartUI;
+    public Image HeartUI1;
     private PlatformerCharacter2D platformerCharacter2D;
 
 
@@ -23,6 +24,6 @@ public class PlayerHealthUI : MonoBehaviour
     void Update ()
     {
         HeartUI.sprite = HeartSprites [platformerCharacter2D.currentHealth];
-
+        HeartUI1.sprite = HeartSprites[platformerCharacter2D.currentHealth];
     }
 }
