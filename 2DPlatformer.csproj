@@ -294,6 +294,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\Albert.cs" />
     <Compile Include="Assets\scripts\Ama.cs" />
     <Compile Include="Assets\scripts\Audioplay.cs" />
     <Compile Include="Assets\scripts\Checkpoint.cs" />
