@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8e0fb6867b958bd41a6198fbd95f58fa
-timeCreated: 1516036675
+timeCreated: 1516120978
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -92,12 +92,12 @@ TextureImporter:
       name: Rocks2_0
       rect:
         serializedVersion: 2
-        x: 251
+        x: 258
         y: 25
-        width: 264
+        width: 257
         height: 234
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -107,25 +107,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 543
-        y: 0
+        y: 20
         width: 142
-        height: 264
+        height: 244
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Rocks2_2
-      rect:
-        serializedVersion: 2
-        x: 812
-        y: 204
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +120,12 @@ TextureImporter:
       name: Rocks2_3
       rect:
         serializedVersion: 2
-        x: 812
-        y: 185
-        width: 36
-        height: 30
+        x: 817
+        y: 186
+        width: 30
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,11 +135,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 765
-        y: 68
+        y: 69
         width: 130
-        height: 89
+        height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,26 +148,12 @@ TextureImporter:
       name: Rocks2_5
       rect:
         serializedVersion: 2
-        x: 767
-        y: 155
-        width: 43
-        height: 29
+        x: 768
+        y: 156
+        width: 41
+        height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Rocks2_6
-      rect:
-        serializedVersion: 2
-        x: 769
-        y: 154
-        width: 7
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,26 +162,12 @@ TextureImporter:
       name: Rocks2_7
       rect:
         serializedVersion: 2
-        x: 714
-        y: 97
-        width: 38
-        height: 24
+        x: 719
+        y: 102
+        width: 30
+        height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Rocks2_8
-      rect:
-        serializedVersion: 2
-        x: 251
-        y: 44
-        width: 5
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
