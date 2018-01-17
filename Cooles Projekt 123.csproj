@@ -296,13 +296,16 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\Albert.cs" />
     <Compile Include="Assets\scripts\Ama.cs" />
+    <Compile Include="Assets\scripts\AttackTrigger.cs" />
     <Compile Include="Assets\scripts\Audioplay.cs" />
     <Compile Include="Assets\scripts\Checkpoint.cs" />
     <Compile Include="Assets\scripts\CoinManager.cs" />
     <Compile Include="Assets\scripts\Coins.cs" />
     <Compile Include="Assets\scripts\Credits.cs" />
     <Compile Include="Assets\scripts\EmeZ.cs" />
+    <Compile Include="Assets\scripts\EmptyClass.cs" />
     <Compile Include="Assets\scripts\Enemy1.cs" />
+    <Compile Include="Assets\scripts\EnemyHealth.cs" />
     <Compile Include="Assets\scripts\Level1End.cs" />
     <Compile Include="Assets\scripts\Level1Enter.cs" />
     <Compile Include="Assets\scripts\Level2End.cs" />
@@ -315,6 +318,7 @@
     <Compile Include="Assets\scripts\MenuManager.cs" />
     <Compile Include="Assets\scripts\Music.cs" />
     <Compile Include="Assets\scripts\PauseGame.cs" />
+    <Compile Include="Assets\scripts\playerAttack.cs" />
     <Compile Include="Assets\scripts\PlayerHealthUI.cs" />
     <Compile Include="Assets\scripts\Saph.cs" />
     <Compile Include="Assets\scripts\Spikes.cs" />
