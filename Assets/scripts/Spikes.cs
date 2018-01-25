@@ -7,12 +7,12 @@ public class Spikes : MonoBehaviour {
 
 
 
-    private PlatformerCharacter2D platformerCharacter2D;
+    private PlatformerCharacter2D player;
 
     // Use this for initialization
     void Start () {
 
-        platformerCharacter2D = GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerCharacter2D>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerCharacter2D>();
     }
 	
 	// Update is called once per frame
@@ -22,9 +22,9 @@ public class Spikes : MonoBehaviour {
         {
             if (!col.gameObject.GetComponent<PlatformerCharacter2D>().invincibility)
 
-            platformerCharacter2D.Damage(1);
+				player.Damage(1);
 
-            StartCoroutine (platformerCharacter2D.Knockback (0.02f, 50, platformerCharacter2D.transform.position));     
+			StartCoroutine (player.Knockback (0.02f, 50, player.transform.position));     
         }
 
 

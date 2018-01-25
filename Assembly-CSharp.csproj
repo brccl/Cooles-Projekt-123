@@ -51,6 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\2DLightAsset\Examples\RigidBodyInterpolationSolution\FollowLight2d.cs" />
+     <Compile Include="Assets\2DLightAsset\Scripts\2DLight\DynamicLight.cs" />
+     <Compile Include="Assets\2DLightAsset\Scripts\Helpers\interface_touch.cs" />
+     <Compile Include="Assets\2DLightAsset\Scripts\Helpers\interface_touch2.cs" />
+     <Compile Include="Assets\2DLightAsset\Scripts\Helpers\TablaSenoCoseno.cs" />
+     <Compile Include="Assets\2DLightAsset\Scripts\rotate.cs" />
+     <Compile Include="Assets\EnemyMovementController.cs" />
      <Compile Include="Assets\scripts\Albert.cs" />
      <Compile Include="Assets\scripts\Ama.cs" />
      <Compile Include="Assets\scripts\AttackTrigger.cs" />
@@ -61,7 +68,6 @@
      <Compile Include="Assets\scripts\Credits.cs" />
      <Compile Include="Assets\scripts\EmeZ.cs" />
      <Compile Include="Assets\scripts\EmptyClass.cs" />
-     <Compile Include="Assets\scripts\Enemy1.cs" />
      <Compile Include="Assets\scripts\EnemyHealth.cs" />
      <Compile Include="Assets\scripts\Level1End.cs" />
      <Compile Include="Assets\scripts\Level1Enter.cs" />
@@ -117,11 +123,13 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\2DLightAsset\Shaders\Gradient-NoTexture-Radial-SingleColor-ToTransparent-RegularUV-AlphaBlend.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
+     <None Include="Assets\2DLightAsset\Shaders\NoTexture.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\Oswald-Bold - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -130,6 +138,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\TextMesh Pro\Fonts\Bangers - OFL.txt" />
+     <None Include="Assets\2DLightAsset\Shaders\Gradient-ZFighting.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

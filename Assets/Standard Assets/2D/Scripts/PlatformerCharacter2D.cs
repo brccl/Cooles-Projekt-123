@@ -28,7 +28,6 @@ namespace UnityStandardAssets._2D
         public bool invincibility;
         public Vector3 respawnPoint;
         private bool invincible = false;
-		Collider2D Swordcol;
 
 
         int jumpCount = 0;
@@ -48,17 +47,10 @@ namespace UnityStandardAssets._2D
         {
             //Set current Health to max on Start
             currentHealth = maxHealth;
-			Swordcol = GameObject.Find ("Sword").GetComponent<Collider2D> ();
         }
 
         void Update()
-        {
-
-			if (Input.GetKeyDown(KeyCode.X))
-			{
-				m_Anim.SetTrigger("Attack");
-			} 
-				
+        {				
             if (currentHealth > maxHealth)
             {
                 currentHealth = maxHealth;
@@ -204,7 +196,7 @@ namespace UnityStandardAssets._2D
 
             while (knockDur > timer)
             {
-                timer += Time.deltaTime;
+                timer+=Time.deltaTime;
 
                 m_Rigidbody2D.AddForce(new Vector3(knockbackDir.x * -100, knockbackDir.y + knockbackPwr, transform.position.z));
             }
@@ -248,21 +240,6 @@ namespace UnityStandardAssets._2D
         {
             invincible = false;
         }
-
-		void Attack()
-		{
-			Swordcol.enabled = true;
-		}
-
-		void Noattack()
-		{
-			Swordcol.enabled = false;
-			m_Anim.ResetTrigger ("Attack");
-		}
-
-
-
-
-
+			
     }
 }
