@@ -5,7 +5,7 @@ public class playerAttack : MonoBehaviour {
 
 	private bool attacking = false;	
 	private float attackTimer = 0;
-	private float attackCooldown = 0.3f;
+	public float attackCooldown = 0.3f;
 	public Collider2D attackTrigger;
 	private Animator anim;
 
@@ -24,6 +24,7 @@ public class playerAttack : MonoBehaviour {
 			attacking = true;
 			attackTimer = attackCooldown;
 			attackTrigger.enabled = true;
+			anim.SetTrigger("Attack");
 		}
 
 		if (attacking)
