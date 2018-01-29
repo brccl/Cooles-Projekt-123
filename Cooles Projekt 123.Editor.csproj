@@ -5,16 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B4CB41DB-FDC7-2F93-DC2F-5980BEE1C354}</ProjectGuid>
+    <ProjectGuid>{24F545B5-BA16-CF28-D977-A3E583C1DA02}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AssemblyName>Assembly-CSharp.dll</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor.dll</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Unity Full v3.5</TargetFrameworkProfile>
     <CompilerResponseFile></CompilerResponseFile>
-    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityProjectType>Editor:5</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.0f3</UnityVersion>
     <RootNamespace></RootNamespace>
@@ -292,75 +292,23 @@
       <Project>{CEBE8C33-EF13-6BDF-7BB0-255AE0EF09B9}</Project>
       <Name>Cooles Projekt 123.Plugins</Name>
     </ProjectReference>
+    <ProjectReference Include="Cooles Projekt 123.csproj">
+      <Project>{B4CB41DB-FDC7-2F93-DC2F-5980BEE1C354}</Project>
+      <Name>Cooles Projekt 123</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cooles Projekt 123.unityproj">
+      <Project>{B4CB41DB-FDC7-2F93-DC2F-5980BEE1C354}</Project>
+      <Name>Cooles Projekt 123</Name>
+    </ProjectReference>
+    <ProjectReference Include="Cooles Projekt 123.Editor.Plugins.csproj">
+      <Project>{9633B21F-0095-241E-C7AD-704A660FD547}</Project>
+      <Name>Cooles Projekt 123.Editor.Plugins</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\2DLightAsset\Examples\RigidBodyInterpolationSolution\FollowLight2d.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\2DLight\DynamicLight.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\Helpers\interface_touch.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\Helpers\interface_touch2.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\Helpers\TablaSenoCoseno.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\rotate.cs" />
-    <Compile Include="Assets\EnemyMovementController.cs" />
-    <Compile Include="Assets\scripts\Albert.cs" />
-    <Compile Include="Assets\scripts\Ama.cs" />
-    <Compile Include="Assets\scripts\AttackTrigger.cs" />
-    <Compile Include="Assets\scripts\Audioplay.cs" />
-    <Compile Include="Assets\scripts\Checkpoint.cs" />
-    <Compile Include="Assets\scripts\CoinManager.cs" />
-    <Compile Include="Assets\scripts\Coins.cs" />
-    <Compile Include="Assets\scripts\Credits.cs" />
-    <Compile Include="Assets\scripts\EmeZ.cs" />
-    <Compile Include="Assets\scripts\EmptyClass.cs" />
-    <Compile Include="Assets\scripts\EnemyHealth.cs" />
-    <Compile Include="Assets\scripts\Level1End.cs" />
-    <Compile Include="Assets\scripts\Level1Enter.cs" />
-    <Compile Include="Assets\scripts\Level2End.cs" />
-    <Compile Include="Assets\scripts\Level2Enter.cs" />
-    <Compile Include="Assets\scripts\Level3End.cs" />
-    <Compile Include="Assets\scripts\Level3Enter.cs" />
-    <Compile Include="Assets\scripts\Level4End.cs" />
-    <Compile Include="Assets\scripts\Level4Enter.cs" />
-    <Compile Include="Assets\scripts\Level5LOL.cs" />
-    <Compile Include="Assets\scripts\LevelLoader.cs" />
-    <Compile Include="Assets\scripts\MenuManager.cs" />
-    <Compile Include="Assets\scripts\Music.cs" />
-    <Compile Include="Assets\scripts\PauseGame.cs" />
-    <Compile Include="Assets\scripts\playerAttack.cs" />
-    <Compile Include="Assets\scripts\PlayerHealthUI.cs" />
-    <Compile Include="Assets\scripts\Saph.cs" />
-    <Compile Include="Assets\scripts\Spikes.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01_UGUI.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark02.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark03.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark04.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\CameraController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\ChatController.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\EnvMapAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\ShaderPropAnimator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\SimpleScript.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\SkewTextExample.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TeleType.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TextConsoleSimulator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TextMeshProFloatingText.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TextMeshSpawner.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_DigitValidator.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_ExampleScript_01.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_FrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextEventCheck.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextEventHandler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextInfoDebugTool.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextSelector_A.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_UiFrameRateCounter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMPro_InstructionOverlay.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexColorCycler.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexJitter.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexShakeA.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexShakeB.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexZoom.cs" />
-    <Compile Include="Assets\TextMesh Pro\Examples\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\2DLightAsset\Scripts\2DLight\Editor\DynamicLightEditor.cs" />
+    <Compile Include="Assets\2DLightAsset\Scripts\2DLight\Editor\DynamicLightMenu.cs" />
+    <Compile Include="Assets\2DLightAsset\Scripts\2DLight\Editor\EditorUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\2DLightAsset\Shaders\Gradient-NoTexture-Radial-SingleColor-ToTransparent-RegularUV-AlphaBlend.shader" />
