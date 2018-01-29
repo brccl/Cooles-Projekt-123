@@ -294,13 +294,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\2DLightAsset\Examples\RigidBodyInterpolationSolution\FollowLight2d.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\2DLight\DynamicLight.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\Helpers\interface_touch.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\Helpers\interface_touch2.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\Helpers\TablaSenoCoseno.cs" />
-    <Compile Include="Assets\2DLightAsset\Scripts\rotate.cs" />
-    <Compile Include="Assets\EnemyMovementController.cs" />
     <Compile Include="Assets\scripts\Albert.cs" />
     <Compile Include="Assets\scripts\Ama.cs" />
     <Compile Include="Assets\scripts\AttackTrigger.cs" />
@@ -311,6 +304,7 @@
     <Compile Include="Assets\scripts\Credits.cs" />
     <Compile Include="Assets\scripts\EmeZ.cs" />
     <Compile Include="Assets\scripts\EmptyClass.cs" />
+    <Compile Include="Assets\scripts\Enemy1.cs" />
     <Compile Include="Assets\scripts\EnemyHealth.cs" />
     <Compile Include="Assets\scripts\Level1End.cs" />
     <Compile Include="Assets\scripts\Level1Enter.cs" />
@@ -363,9 +357,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples\Scripts\WarpTextExample.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\2DLightAsset\Shaders\Gradient-NoTexture-Radial-SingleColor-ToTransparent-RegularUV-AlphaBlend.shader" />
-    <None Include="Assets\2DLightAsset\Shaders\Gradient-ZFighting.shader" />
-    <None Include="Assets\2DLightAsset\Shaders\NoTexture.shader" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Fonts\Bangers - OFL.txt" />
