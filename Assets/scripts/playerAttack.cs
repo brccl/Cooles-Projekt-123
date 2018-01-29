@@ -19,7 +19,7 @@ public class playerAttack : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetKeyDown(KeyCode.X) && !attacking)
+		if (Input.GetKeyDown(KeyCode.Mouse1) && !attacking)
 		{
 			attacking = true;
 			attackTimer = attackCooldown;

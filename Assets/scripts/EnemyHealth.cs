@@ -6,7 +6,7 @@ public class EnemyHealth : MonoBehaviour {
 
 	public int currentHealth;
 	public int maxHealth = 4;
-
+	private Animator anim;
 
 	// Use this for initialization
 	void Start () 
@@ -17,6 +17,11 @@ public class EnemyHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+
+		hitTimer += Time.deltaTime;
+
+		if(hitTimer > hitTime)
+
 
 
 		if (currentHealth > maxHealth)
@@ -35,7 +40,7 @@ public class EnemyHealth : MonoBehaviour {
 	{
 		//Deal Damage to Enemy Health
 		currentHealth -= damage;
-		//gameObject.GetComponent<Animation>().Play("Player_Redflash");
+		anim.SetTrigger("Enemy_Hurt");
 	}
 
 
