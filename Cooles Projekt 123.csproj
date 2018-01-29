@@ -300,7 +300,6 @@
     <Compile Include="Assets\2DLightAsset\Scripts\Helpers\interface_touch2.cs" />
     <Compile Include="Assets\2DLightAsset\Scripts\Helpers\TablaSenoCoseno.cs" />
     <Compile Include="Assets\2DLightAsset\Scripts\rotate.cs" />
-    <Compile Include="Assets\EnemyMovementController.cs" />
     <Compile Include="Assets\scripts\Albert.cs" />
     <Compile Include="Assets\scripts\Ama.cs" />
     <Compile Include="Assets\scripts\AttackTrigger.cs" />
@@ -312,6 +311,7 @@
     <Compile Include="Assets\scripts\EmeZ.cs" />
     <Compile Include="Assets\scripts\EmptyClass.cs" />
     <Compile Include="Assets\scripts\EnemyHealth.cs" />
+    <Compile Include="Assets\scripts\EnemyMovementController.cs" />
     <Compile Include="Assets\scripts\Level1End.cs" />
     <Compile Include="Assets\scripts\Level1Enter.cs" />
     <Compile Include="Assets\scripts\Level2End.cs" />
