@@ -1,8 +1,12 @@
 sceneSetups:
 <<<<<<< HEAD
+<<<<<<< HEAD
 - path: Assets/scenes/Lv3.unity
 =======
 - path: Assets/scenes/Lv5.unity
 >>>>>>> parent of b4cc6f9... Revert "Yoho"
+=======
+- path: Assets/scenes/Lv5.unity
+>>>>>>> e9fbce551c22b03dcfe32a459d4bfba74fb2213b
   isLoaded: 1
   isActive: 1

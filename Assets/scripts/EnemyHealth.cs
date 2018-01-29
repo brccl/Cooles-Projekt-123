@@ -18,12 +18,15 @@ public class EnemyHealth : MonoBehaviour {
 	void Update () 
 	{
 
+<<<<<<< HEAD
 		hitTimer += Time.deltaTime;
 
 		if(hitTimer > hitTime)
 
 
 
+=======
+>>>>>>> e9fbce551c22b03dcfe32a459d4bfba74fb2213b
 		if (currentHealth > maxHealth)
 		{
 			currentHealth = maxHealth;
@@ -33,14 +36,17 @@ public class EnemyHealth : MonoBehaviour {
 			{
 				deSpawn();
 			}
-
 	}
 
 	public void Damage(int damage)
 	{
 		//Deal Damage to Enemy Health
 		currentHealth -= damage;
+<<<<<<< HEAD
 		anim.SetTrigger("Enemy_Hurt");
+=======
+		anim.SetTrigger ("Enemy_Hurt");
+>>>>>>> e9fbce551c22b03dcfe32a459d4bfba74fb2213b
 	}
 
 
