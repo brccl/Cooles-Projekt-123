@@ -2,10 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\EnemyHealth.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" Line="1" Column="1" />
-      <File FileName="Assets\EnemyMovementController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" Line="43" Column="15" />
       <File FileName="Assets\scripts\Spikes.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\EnemyHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\EnemyHealth.cs" Line="36" Column="34" />
+      <File FileName="Assets\scripts\EnemyMovementController.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\AttackTrigger.cs" Line="12" Column="42" />
+      <File FileName="Assets\scripts\playerAttack.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Checkpoint.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
